@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1587079621 source:c:\users\martindamian\tp_laboratorio_1\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"calculador.h"
+
+1587079958 c:\users\martindamian\tp_laboratorio_1\tp1\calculador.h
+
+1587079958 source:c:\users\martindamian\tp_laboratorio_1\tp1\calculador.c
+	<stdio.h>
+	<stdlib.h>
+	"calculador.h"
+
