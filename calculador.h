@@ -1,7 +1,7 @@
-int menuOpciones();
-int suma(float numeroUno,float numeroDos);
-int resta(float numeroUno,float numeroDos);
-int multiplicacion(float numeroUno,float numeroDos);
-int division(float numeroUno,float numeroDos);
-int factorial(float numeroUno);
+void MenuOpciones();
+int Suma(float numeroUno,float numeroDos);
+int Resta(float numeroUno,float numeroDos);
+int Multiplicacion(float numeroUno,float numeroDos);
+int Division(float numeroUno,float numeroDos);
+int Factorial(float numeroUno);
 

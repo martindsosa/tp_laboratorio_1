@@ -3,9 +3,9 @@
 #include "calculador.h"
 
 /**\brief Solicita dos numeros y llama a las funciones que hacen los calculos correspondientes.
-*\return int
+*\return void
 **/
-int menuOpciones()
+void MenuOpciones()
 {
     float numeroUno=0;
     float numeroDos=0;
@@ -43,12 +43,12 @@ int menuOpciones()
                 break;
             case 4:
             {
-                suma(numeroUno,numeroDos);
-                resta(numeroUno,numeroDos);
-                multiplicacion(numeroUno,numeroDos);
-                division(numeroUno,numeroDos);
-                factorial(numeroUno);
-                factorial(numeroDos);
+                Suma(numeroUno,numeroDos);
+                Resta(numeroUno,numeroDos);
+                Multiplicacion(numeroUno,numeroDos);
+                Division(numeroUno,numeroDos);
+                Factorial(numeroUno);
+                Factorial(numeroDos);
                 system("pause");
                 system("cls");
                 break;
@@ -60,15 +60,13 @@ int menuOpciones()
         }
 
     }while(operacionElegida != 5);
-
-    return 0;
 }
 /**\brief Suma dos numeros
 *\param float primer numero
 *\param float segundo numero
 *\return int  resultado de la suma de dos numeros
 **/
-int suma(float numeroUno,float numeroDos)
+int Suma(float numeroUno,float numeroDos)
 {
     float resultado;
     resultado = numeroUno + numeroDos;
@@ -80,7 +78,7 @@ int suma(float numeroUno,float numeroDos)
 *\param float segundo numero
 *\return int  resultado de la resta de dos numeros
 **/
-int resta(float numeroUno,float numeroDos)
+int Resta(float numeroUno,float numeroDos)
 {
     float resultado;
     resultado = numeroUno - numeroDos;
@@ -92,7 +90,7 @@ int resta(float numeroUno,float numeroDos)
 *\param float segundo numero
 *\return int  resultado de la multiplicacion de dos numeros
 **/
-int multiplicacion(float numeroUno,float numeroDos)
+int Multiplicacion(float numeroUno,float numeroDos)
 {
     float resultado;
     resultado = numeroUno * numeroDos;
@@ -104,7 +102,7 @@ int multiplicacion(float numeroUno,float numeroDos)
 *\param float segundo numero
 *\return int el resultado de la division de dos numeros
 **/
-int division(float numeroUno,float numeroDos)
+int Division(float numeroUno,float numeroDos)
 {
     int retorno = -1;
     float resultado;
@@ -124,7 +122,7 @@ int division(float numeroUno,float numeroDos)
 *\param float numero
 *\return int Devuelve si se puedo resolver el factorial
 **/
-int factorial(float numero)
+int Factorial(float numero)
 {
     int retorno = -1;
     int numeroUnoEntero = (int)numero;
@@ -150,6 +148,5 @@ int factorial(float numero)
     if(retorno!=-1){
         printf("El factorial de %d es %ld \n",numeroUnoEntero,resultado);
     }
-
     return retorno;
 }

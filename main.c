@@ -14,7 +14,7 @@
 
 int main()
 {
-    menuOpciones();
+    MenuOpciones();
     printf("Gracias por haber utilizar la calculadora...");
     return 0;
 }
