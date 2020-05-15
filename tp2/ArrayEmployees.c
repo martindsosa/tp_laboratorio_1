@@ -1,4 +1,5 @@
 #include "ArrayEmployees.h"
+
 /** \brief Inicializa el campo isEmpty de la estructura en 1(TRUE) para idicar que esta vacio.
 * \param list Employee[]lista de empleados
 * \param len int tamaño del Array
@@ -72,3 +73,63 @@ int addEmployee(Employee list[],int len,int id,char name[],
 
     return retorno;
 }
+
+/** \brief Remove a Employee by Id (put isEmpty Flag in 1)
+*
+* \param list Employee*
+* \param len int
+* \param id int
+* \return int Return (-1) if Error [Invalid length or NULL pointer or if can't
+find a employee] - (0) if Ok
+*
+*/
+int removeEmployee(Employee* list, int len, int id)
+{
+
+
+return -1;
+}
+/** \brief find an Employee by Id en returns the index position in array.
+*
+* \param list Employee*
+* \param len int
+* \param id int
+* \return Return employee index position or (-1) if [Invalid length or NULL
+pointer received or employee not found]
+*
+*/
+int findEmployeeById(Employee* list, int len,int id)
+{
+
+
+return NULL
+}
+
+/** \brief Sort the elements in the array of employees, the argument order
+indicate UP or DOWN order
+*
+* \param list Employee*
+* \param len int
+* \param order int [1] indicate UP - [0] indicate DOWN
+* \return int Return (-1) if Error [Invalid length or NULL pointer] - (0) if Ok
+*
+*/
+int sortEmployees(Employee* list, int len, int order)
+{
+
+return 0;
+}
+
+/** \brief print the content of employees array
+*
+* \param list Employee*
+* \param length int
+* \return int
+*
+*/
+int printEmployees(Employee* list, int length)
+{
+
+return 0;
+}
+

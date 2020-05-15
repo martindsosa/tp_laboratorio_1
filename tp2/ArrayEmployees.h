@@ -11,3 +11,7 @@ struct
 int initEmployees(Employee[],int);
 
 int addEmployee(Employee[],int,int,char[],char[],float,int);
+int findEmployeeById(Employees[],int,int);
+int removeEmployee(Employee*,int,int);
+int sortEmployees(Employee*,int,int);
+int printEmployees(Employee*,int);
