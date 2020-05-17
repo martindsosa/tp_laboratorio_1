@@ -1,3 +1,7 @@
+#define LIBRE 0
+#define OCUPADO 1
+
+
 struct
 {
     int id;
@@ -11,7 +15,9 @@ struct
 int initEmployees(Employee[],int);
 
 int addEmployee(Employee[],int,int,char[],char[],float,int);
-int findEmployeeById(Employees[],int,int);
+int addAnEmployee();
+int findEmployeeById(Employee[],int,int);
 int removeEmployee(Employee*,int,int);
-int sortEmployees(Employee*,int,int);
+int sortEmployeesByName(Employee*,int,int);
 int printEmployees(Employee*,int);
+int findFreeEmployee(Employee*, int);
